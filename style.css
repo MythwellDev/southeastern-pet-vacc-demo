@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2a24;
+  background: #f6f3ec;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #12382c;
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d9a441;
+}
+
+.hero-text {
+  max-width: 520px;
+  margin: 0.5rem 0 0;
+  color: #e6eee9;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-nav a {
+  font-weight: 700;
+  padding: 0.55rem 0.85rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+}
+
+.header-nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hero-section {
+  position: relative;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(rgba(18,56,44,0.78), rgba(18,56,44,0.78)),
+    url('images/trailer.png');
+
+  background-size: 115%;
+  background-position: center 45%;
+
+  z-index: 0;
+}
+
+.hero-grid,
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.hero-card,
+.schedule-card,
+.location-card,
+.pricing-card,
+.info-card {
+  background: white;
+  border-radius: 18px;
+  padding: 1.4rem;
+  box-shadow: 0 12px 30px rgba(18, 56, 44, 0.1);
+}
+
+.hero-card.featured {
+  border: 3px solid #d9a441;
+}
+
+.card-label,
+.date {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #8a6220;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-card h2,
+.section-heading h2,
+.schedule-card h3,
+.location-card h3,
+.pricing-card h3,
+.info-card h3 {
+  margin-top: 0;
+  line-height: 1.15;
+}
+
+.location-name,
+.clinic-date,
+.clinic-time {
+  font-weight: 700;
+}
+
+.clinic-time {
+  color: #12382c;
+}
+
+.content-section {
+  padding: 4rem 0;
+}
+
+.muted-section {
+  background: #ebe5d8;
+}
+
+.section-heading {
+  max-width: 680px;
+  margin-bottom: 1.75rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  margin-bottom: 0.4rem;
+}
+
+.section-heading p {
+  margin-top: 0;
+}
+
+.schedule-grid,
+.pricing-grid,
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.schedule-card span {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  background: #eaf3ee;
+  color: #12382c;
+  font-weight: 800;
+  border-radius: 999px;
+}
+
+.location-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pricing-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid #e8e2d7;
+}
+
+.pricing-card li:last-child {
+  border-bottom: none;
+}
+
+.pricing-card strong {
+  color: #12382c;
+  white-space: nowrap;
+}
+
+.info-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.site-footer {
+  background: #12382c;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+.footer-note {
+  color: #c8d8cf;
+  font-size: 0.9rem;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  row-gap: 1.25rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.schedule-grid {
+  margin-top: 0.5rem;
+}
+
+.filter-btn {
+  border: 2px solid #d9a441;
+  background: white;
+  color: #12382c;
+  font-weight: 800;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(18, 56, 44, 0.08);
+  transition: all 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #12382c;
+  border-color: #12382c;
+  color: white;
+}
+
+.filter-btn:active {
+  box-shadow: 0 10px 22px rgba(18, 56, 44, 0.18);
+  transform: scale(0.98);
+}
+
+.cta-section {
+  padding: 3rem 0;
+  background: #f6f3ec;
+}
+
+.cta-box {
+  background: #12382c;
+  color: white;
+  border-radius: 24px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.cta-box h2 {
+  margin: 0.25rem 0;
+}
+
+.cta-button {
+  background: #d9a441;
+  color: #12382c;
+  font-weight: 900;
+  padding: 0.85rem 1.15rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .header-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-grid,
+  .schedule-grid,
+  .pricing-grid,
+  .info-grid,
+  .location-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phone */
+@media (max-width: 620px) {
+  .site-header {
+    padding: 1.25rem 0;
+  }
+
+  .cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-nav {
+    width: 100%;
+  }
+
+  .header-nav a {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .hero-section {
+    padding: 2rem 0;
+  }
+
+  .hero-grid,
+  .schedule-grid,
+  .pricing-grid,
+  .info-grid,
+  .location-list {
+    grid-template-columns: 1fr;
+  }
+
+  .content-section {
+    padding: 3rem 0;
+  }
+
+  .hero-card,
+  .schedule-card,
+  .location-card,
+  .pricing-card,
+  .info-card {
+    padding: 1rem;
+  }
+
+  .hero-card,
+  .schedule-card,
+  .location-card,
+  .pricing-card,
+  .info-card {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .hero-card:hover,
+  .schedule-card:hover,
+  .location-card:hover,
+  .pricing-card:hover,
+  .info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 34px rgba(18, 56, 44, 0.16);
+  }
+
+  .hero-card:active,
+  .schedule-card:active,
+  .location-card:active,
+  .pricing-card:active,
+  .info-card:active {
+    transform: scale(0.98);
+  }
+
+  
+}

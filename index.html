@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Southeastern Pet Vacc Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <p class="eyebrow">Mobile Pet Vaccination Clinic</p>
+        <h1>Southeastern Pet Vacc</h1>
+        <p class="hero-text">
+          Find upcoming clinic stops, basic pricing, and what to bring before you arrive.
+        </p>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#schedule">Schedule</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#before-you-go">Before You Go</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-card featured">
+          <p class="card-label">Next Clinic</p>
+          <h2>Greenwood</h2>
+          <p class="location-name">Kingdom Works Ministry Building</p>
+          <p class="clinic-date">Tuesday, May 26</p>
+          <p class="clinic-time">1:00 PM – 6:00 PM</p>
+          <p class="clinic-note">
+            2315 Montague Ave Ext, across from Robert's Body Shop.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <p class="card-label">Most Clinics</p>
+          <h2>1 PM – 6 PM</h2>
+          <p>
+            Iva clinic times may differ due to shared use of location.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <p class="card-label">Payment</p>
+          <h2>Cash Preferred</h2>
+          <p>
+            Checks with ID and chipped cards/tap-to-pay are also accepted.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="content-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Upcoming Stops</p>
+          <h2>Clinic Schedule</h2>
+          <p>
+            A cleaner view of upcoming weekly locations without digging through Facebook posts.
+          </p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="anderson">Anderson</button>
+          <button class="filter-btn" data-filter="greenwood">Greenwood</button>
+          <button class="filter-btn" data-filter="liberty">Liberty</button>
+        </div>
+
+        <div class="schedule-grid">
+          <article class="schedule-card" data-city="greenwood">
+            <p class="date">May 26</p>
+            <h3>Greenwood</h3>
+            <p>Kingdom Works Ministry Building</p>
+            <span>1 PM – 6 PM</span>
+          </article>
+
+          <article class="schedule-card" data-city="anderson">
+            <p class="date">May 27</p>
+            <h3>Anderson</h3>
+            <p>Quality Foods on Hwy 28 Bypass</p>
+            <span>1 PM – 6 PM</span>
+          </article>
+
+          <article class="schedule-card" data-city="liberty">
+            <p class="date">May 28</p>
+            <h3>Liberty</h3>
+            <p>Rosewood Center between Dollar Tree and Ingles</p>
+            <span>1 PM – 6 PM</span>
+          </article>
+
+          <article class="schedule-card" data-city="anderson">
+            <p class="date">May 29</p>
+            <h3>Anderson</h3>
+            <p>Hwy 24 next to Chicken Basket Restaurant</p>
+            <span>1 PM – 6 PM</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="locations" class="content-section muted-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Recurring Stops</p>
+          <h2>Common Clinic Locations</h2>
+        </div>
+
+        <div class="location-list">
+          <div class="location-card">
+            <h3>Anderson</h3>
+            <p>Quality Foods on Hwy 28 Bypass</p>
+          </div>
+
+          <div class="location-card">
+            <h3>Anderson</h3>
+            <p>Hwy 24 next to Chicken Basket Restaurant</p>
+          </div>
+
+          <div class="location-card">
+            <h3>Greenwood</h3>
+            <p>Kingdom Works Ministry Building</p>
+          </div>
+
+          <div class="location-card">
+            <h3>Belton</h3>
+            <p>Gus's Home Center on Anderson St / Hwy 76</p>
+          </div>
+
+          <div class="location-card">
+            <h3>Liberty</h3>
+            <p>Rosewood Center on E. Main St</p>
+          </div>
+
+          <div class="location-card">
+            <h3>Iva</h3>
+            <p>Civic Center back parking lot</p>
+          </div>
+
+          <div class="location-card">
+            <h3>Abbeville</h3>
+            <p>In front of Post Office / Ingles on N. Main St</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="content-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Basic Price List</p>
+          <h2>Services & Pricing</h2>
+          <p>Prices may vary by pet size and are subject to change.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Core Vaccines</h3>
+            <ul>
+              <li><span>1yr Rabies</span><strong> $10</strong></li>
+              <li><span>3yr Rabies</span><strong> $14</strong></li>
+              <li><span>DHLPP</span><strong> $14</strong></li>
+              <li><span>DHLPP-C Puppy Shot</span><strong>$16</strong></li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Canine & Feline</h3>
+            <ul>
+              <li><span>Bordetella</span><strong> $14</strong></li>
+              <li><span>Canine Influenza</span><strong> $27</strong></li>
+              <li><span>Feline FVRCP-Ch</span><strong> $14</strong></li>
+              <li><span>Feline Leukemia</span><strong> $19</strong></li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Tests & Prevention</h3>
+            <ul>
+              <li><span>Exam</span><strong> $5–10</strong></li>
+              <li><span>Heartworm Test</span><strong> $15</strong></li>
+              <li><span>Heartworm Prevention</span><strong> $10–12/dose</strong></li>
+              <li><span>Rx Flea Tablets</span><strong> $21–65</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="before-you-go" class="content-section muted-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Visit Prep</p>
+          <h2>Before You Go</h2>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Payment</h3>
+            <p>Cash is preferred, especially small bills. Checks require ID. Cards/tap may include a small fee.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Medication Pickup</h3>
+            <p>Pets must have been seen within the last year, or have current eligible rabies records.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Bring Records</h3>
+            <p>Bring medication packaging or a previous receipt when possible to simplify the visit.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Save Paperwork</h3>
+            <p>Vaccination paperwork is proof of service. Photograph or scan records for backup.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="cta-section">
+    <div class="container cta-box">
+      <div>
+        <p class="eyebrow">Questions?</p>
+        <h2>Visit a clinic for service questions.</h2>
+        <p>Schedule, pricing, and clinic details are shown here as a demo concept.</p>
+      </div>
+      <a href="#schedule" class="cta-button">View Schedule</a>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Demo concept site for mobile clinic schedule organization.</p>
+      <p class="footer-note">This is a design mockup, not an official website.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
